@@ -100,7 +100,7 @@ int main() {
     printf("\n Código da Cidade da primeira carta: %s", codigo1);
     printf("\n Nome da Cidade da primeira carta: %s", nome1);
     printf("\n População da Cidade da primeira carta: %ld", populacao1);
-    printf("\n Área em km² da Cidade da primeira carta: %.2f", area1);
+    printf("\n Área em km² da Cidade da primeira carta: %.3f", area1);
     printf("\n PIB da Cidade da primeira carta: %.2f", pib1);
     printf("\n Número de pontos Túristicos da Cidade da primeira carta: %d", npt1);
     printf("\n Densidade populacional da primeira carta: %.2f", (float)densidade1);
@@ -112,7 +112,7 @@ int main() {
     printf("\n Código da Cidade da segunda carta: %s", codigo2);
     printf("\n Nome da Cidade da segunda carta: %s", nome2);
     printf("\n População da Cidade da segunda carta: %ld", populacao2);
-    printf("\n Área em km² da Cidade da segunda carta: %.2f", area2);
+    printf("\n Área em km² da Cidade da segunda carta: %.3f", area2);
     printf("\n PIB da Cidade da segunda carta: %.2f", pib2);
     printf("\n Número de pontos Túristicos da Cidade da segunda carta: %d", npt2);
     printf("\n Densidade populacional da segunda carta: %.2f", (float)densidade2);
@@ -121,13 +121,14 @@ int main() {
 
     //Comparação dos valores das cartas
 
-    printf( "\nSe o resultado for 1, a carta 1 venceu, caso contrário, a carta 2 venceu, %d\n", populacao1>populacao2);
-    printf( "Se o resultado for 1, a carta 1 venceu, caso contrário, a carta 2 venceu, %d\n", area1>area2);
-    printf( "Se o resultado for 1, a carta 1 venceu, caso contrário, a carta 2 venceu, %d\n", pib1>pib2);
-    printf( "Se o resultado for 1, a carta 1 venceu, caso contrário, a carta 2 venceu, %d\n", npt1>npt2);
-    printf( "Se o resultado for 1, a carta 1 venceu, caso contrário, a carta 2 venceu, %d\n", densidade1<densidade2);
-    printf( "Se o resultado for 1, a carta 1 venceu, caso contrário, a carta 2 venceu, %d\n", ppc1>ppc2);
-    printf( "Se o resultado for 1, a carta 1 venceu, caso contrário, a carta 2 venceu, %d\n", superpoder1>superpoder2);
+    printf( "\nSe o resultado for 1, a carta 1 venceu, caso contrário, a carta 2 venceu\nPopulação, %d\n", populacao1>populacao2);
+    printf( "Se o resultado for 1, a carta 1 venceu, caso contrário, a carta 2 venceu\nÁrea, %d\n", area1>area2);
+    printf( "Se o resultado for 1, a carta 1 venceu, caso contrário, a carta 2 venceu\nPIB, %d\n", pib1>pib2);
+    printf( "Se o resultado for 1, a carta 1 venceu, caso contrário, a carta 2 venceu\nNúmero Pontos Turísticos, %d\n", npt1>npt2);
+    printf( "Se o resultado for 1, a carta 1 venceu, caso contrário, a carta 2 venceu\nDensidade Populacional, %d\n", densidade1<densidade2);
+    printf( "Se o resultado for 1, a carta 1 venceu, caso contrário, a carta 2 venceu\nPib Per Capta, %d\n", ppc1>ppc2);
+    printf( "Se o resultado for 1, a carta 1 venceu, caso contrário, a carta 2 venceu\nSuperpoder, %d\n", superpoder1>superpoder2);
     
     return 0;
 }
+
